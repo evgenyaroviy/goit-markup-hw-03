@@ -16,6 +16,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color-h);
 }
+
+.conteiner {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* header */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -39,6 +45,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color-h);
   text-decoration: none;
+}
+
+.navigation .nav-list,
+.navigation,
+.site-nav {
+  display: flex;
 }
 
 .site-nav list {
