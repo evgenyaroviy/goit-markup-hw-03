@@ -21,7 +21,35 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color-h);
 }
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid teal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
 /* header */
+.page-header > .container {
+  display: flex;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -30,10 +58,26 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--main-color-h);
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 76px;
 }
 
 .logo-name {
   color: var(--button-bg);
+}
+
+.navigation {
+  display: flex;
+}
+
+.site-nav {
+  outline: 1px solid tomato;
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .site-nav a {
@@ -43,6 +87,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color-h);
   text-decoration: none;
+}
+
+.auth-nav {
+  display: flex;
+  gap: 40px;
 }
 
 .auth-nav a {
@@ -64,11 +113,16 @@ body {
 
 .address {
   font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: auto;
 }
 
 /* hero */
 .hero {
   background-color: var(--main-color-h);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-size: 56px;
@@ -76,8 +130,10 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-color);
+
+  margin-bottom: 48px;
 }
-.hero > .button {
+.button-hero {
   font-family: "Roboto";
   font-weight: 500;
   background: var(--button-bg);
@@ -86,6 +142,11 @@ body {
   letter-spacing: 0.04em;
   color: var(--main-color);
   cursor: pointer;
+}
+
+.btc {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -132,12 +193,26 @@ body {
   margin: -1px;
 }
 
+.section > .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.order-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-list > li {
+  width: calc((100% - 48px) / 4);
+}
 .order-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-color-h);
+  margin-bottom: 8px;
 }
 
 .order-text {
@@ -149,6 +224,13 @@ body {
 
 /* What are we doing */
 
+.work-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* Our Team */
+
 .work,
 .team {
   font-size: 36px;
@@ -157,6 +239,17 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--main-color-h);
+  margin-bottom: 72px;
+}
+
+.team-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-name {
@@ -165,6 +258,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--team-color);
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
