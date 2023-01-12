@@ -14,6 +14,7 @@ button color #4D5AE5
   --team-color: #2e2f42;
   --color-footer: #e7e9fc;
   --logo-footer: #f4f4fd;
+  --padding-nav: 24px 0;
 }
 
 body {
@@ -83,7 +84,7 @@ img {
   /* outline: 1px solid tomato; */
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+  padding: var(--padding-nav);
 }
 
 .nav-list {
@@ -97,7 +98,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color-h);
   text-decoration: none;
-  padding: 24px 0;
+  padding: var(--padding-nav);
 }
 
 .address {
@@ -107,7 +108,7 @@ img {
 .auth-nav {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+  padding: var(--padding-nav);
 }
 
 .auth-nav a {
@@ -118,8 +119,7 @@ img {
   color: var(--color-page);
 
   font-style: normal;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: var(--padding-nav);
 }
 .link:hover,
 .link:focus {
