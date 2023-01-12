@@ -83,12 +83,11 @@ img {
   /* outline: 1px solid tomato; */
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .nav-list {
   display: inline;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .site-nav a {
@@ -98,6 +97,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color-h);
   text-decoration: none;
+  padding: 24px 0;
 }
 
 .address {
@@ -107,6 +107,7 @@ img {
 .auth-nav {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .auth-nav a {
